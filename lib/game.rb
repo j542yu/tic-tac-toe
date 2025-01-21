@@ -27,14 +27,6 @@ class Game
   attr_reader :board, :players
   attr_accessor :current_player_idx
 
-  def current_player
-    players[current_player_idx]
-  end
-
-  def other_player
-    players[other_player_idx]
-  end
-
   def play
     while !board_full? && !player_has_won?
       place_current_player_marker
@@ -46,6 +38,16 @@ class Game
     elsif player_has_won?
       puts "\n#{other_player} has won! Game over."
     end
+  end
+
+  private
+
+  def current_player
+    players[current_player_idx]
+  end
+
+  def other_player
+    players[other_player_idx]
   end
 
   def place_current_player_marker
