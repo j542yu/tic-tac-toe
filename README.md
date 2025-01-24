@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 ## Overview
-Note: This is created as part of The Odin Project's Ruby on Rails course.
+Note: This is created as part of The Odin Project's Ruby course in their Ruby on Rails path.
 ## Setting up Ruby
 This game is made to play on the command line, and is written for Ruby version 3.3.5
 ## How to Play
